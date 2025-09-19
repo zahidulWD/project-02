@@ -1,5 +1,5 @@
 /* ==========================
-   Responsive Navbar Styles
+   Responsive__Styles
    ========================== */
 
 /* Medium devices (tablets ≤ 992px) */
@@ -24,7 +24,9 @@
     display: flex;
     gap: 20px;
   }
-  /* banner area */
+  /*============== 
+     banner area 
+  ===============*/
   .banner_content h1 {
     font-size: 50px;
   }
@@ -37,8 +39,83 @@
     width: 90%;
     height: auto;
   }
-    .banner_img {
+  .banner_img {
     order: -1;
+  }
+
+ /*============== 
+     category area 
+  ===============*/
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .category_title {
+    font-size: 36px;
+    margin: 40px 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+  /* =============
+     category sectio-2
+    ============== */
+  .shop2 {
+    grid-template-columns: repeat(2, 1fr); /* 2 card per row */
+  }
+  .card2 {
+    flex-direction: column; /* image up, text down */
+    text-align: center;
+    padding: 20px;
+  }
+  .card2_img {
+    order: -1; /* image আগে দেখাবে */
+    margin-bottom: 15px;
+  }
+
+
+  /* =============
+    Latest health
+    ============== */
+
+  .health_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 15px;
+  }
+
+  .health_card h2 {
+    font-size: 20px;
+  }
+
+  .health_card p {
+    font-size: 16px;
+  }
+
+  .img_dev {
+    height: 180px;
+  }
+
+  .badge {
+    padding: 5px 12px;
+    font-size: 14px;
   }
 }
 
@@ -113,6 +190,85 @@
     max-width: 400px;
     margin: 0 auto;
   }
+
+ /*============== 
+     banner area 
+  ===============*/
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .category_title {
+    font-size: 28px;
+    margin: 30px 10px;
+  }
+
+  /* .card img {
+    width: 80px;
+    height: 80px;
+  } */
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+    /* =============
+     category sectio-2
+    ============== */
+  .shop2 {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+  .card2 {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  .card2_img {
+    order: -1;
+    margin-bottom: 10px;
+  }
+  .card2_content h3 {
+    font-size: 18px;
+  }
+  .sanitizer {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .shop {
+    font-size: 14px;
+  }
+
+    /* =============
+    Latest health
+    ============== */
+  .health_cards {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 card per row */
+    gap: 15px;
+  }
+
+  .health_card h2 {
+    font-size: 18px;
+  }
+
+  .health_card p {
+    font-size: 14px;
+  }
+
+  .img_dev {
+    height: 160px;
+    padding: 8px;
+  }
+
+  .badge {
+    padding: 4px 10px;
+    font-size: 13px;
+  }
 }
 
 /* Extra small devices (≤ 480px) */
@@ -145,5 +301,82 @@
 
   .banner_img img {
     max-width: 300px;
+  }
+
+ /*============== 
+     banner area 
+  ===============*/
+   .cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    
+  }
+
+  .category_title {
+    font-size: 24px;
+    margin: 20px 10px;
+  }
+
+  .card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+    /* =============
+     category sectio-2
+    ============== */
+  .card2_content h3 {
+    font-size: 24px;
+  }
+  .sanitizer {
+    display: none;
+  }
+  .shop {
+    font-size: 18px;
+  }
+
+    /* =============
+    Latest health
+    ============== */
+ .health_cards {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+
+  .health_card h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .health_card p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .img_dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 6px;
+
+  }
+
+  .badge {
+    padding: 8px 18px;
+    font-size: 12px;
+    left: 50px;
+    top: 50px;
   }
 }
