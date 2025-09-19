@@ -117,6 +117,51 @@
     padding: 5px 12px;
     font-size: 14px;
   }
+
+  /* ==============
+  client section
+  ================= */
+  .client_comment {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .client_comment img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .client_comment p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  .client {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .client_dev {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .client_img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .content h3 {
+    font-size: 16px;
+  }
+
+  .client p {
+    font-size: 14px;
+  }
 }
 
 /* Small devices (mobile ≤ 768px) */
@@ -205,11 +250,6 @@
     margin: 30px 10px;
   }
 
-  /* .card img {
-    width: 80px;
-    height: 80px;
-  } */
-
   .card h3 {
     font-size: 15px;
   }
@@ -267,6 +307,41 @@
 
   .badge {
     padding: 4px 10px;
+    font-size: 13px;
+  }
+
+    /* ==============
+  client section
+  ================= */
+   .client_comment {
+    padding: 10px;
+  }
+
+  .client_comment img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .client_comment p {
+    font-size: 13px;
+  }
+
+  .client {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .client_img img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .content h3 {
+    font-size: 15px;
+  }
+
+  .client p {
     font-size: 13px;
   }
 }
@@ -378,5 +453,41 @@
     font-size: 12px;
     left: 50px;
     top: 50px;
+  }
+
+    /* ==============
+  client section
+  ================= */
+  .client_comment img {
+    width: 60px;
+    margin-bottom: 8px;
+  }
+
+  .client_comment p {
+    font-size: 12px;
+  }
+
+  .client {
+    gap: 10px;
+  }
+
+  .client_dev {
+    gap: 8px;
+  }
+
+  .client_img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .content h3 {
+    font-size: 14px;
+  }
+
+  .client p {
+    font-size: 12px;
+  }
+  .client_comment p br{
+    display: none;
   }
 }
