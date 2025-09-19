@@ -1,5 +1,4 @@
 
-
 /* Google_Font_Bebas Neue/ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -79,7 +78,7 @@ img {
 
  .nav_lists{
     display: flex;
-    gap: 20px;
+    gap: 30px;
  }
 
  .nav_lists li a{
@@ -103,11 +102,19 @@ img {
     height: 2px;
     bottom: -5px;
     transition: 0.3s all ease-in-out;
-    background-color: black;
+    background-color: #503217;
  }
- .nav_lists li a:hover::before{
+ .nav_lists li a:hover::before,
+ .nav_lists li a#active::before{
     width: 100%;
     transition: 0.3s all ease-in-out;
+
+ }
+ .nav_logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
  }
  .nav_logo a{
     font-size: 25.43px;
@@ -115,6 +122,7 @@ img {
     line-height: 31px;
     letter-spacing: 0%;
     text-align: left;
+    color: #503217;
     
  }
 
@@ -128,6 +136,9 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+ }
+ .hamburger{
+  display: none;
  }
 
 

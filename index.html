@@ -9,17 +9,20 @@
      <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <!-- css-link -->
      <link rel="stylesheet" href="assets/css/style.css">
-     <!-- font_awesome link -->
-      <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- responsive_css_link -->
+     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- font_awesome link -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 </head>
 <body>
     <!-- Navbar section start here -->
      <div class="nav_section">
         <nav class="navbar container">
             <div class="nav_logo">
-                <img src="assets/images/logo.png" alt="LOGO">
-                <a href="#" class="logo_text">Medifit</a>
+                <div class="img"><img src="assets/images/logo.png" alt="LOGO"></div>
+                <div class="logo_content"><a href="#" class="logo_text">Medifit</a></div>
             </div>
+
             <ul class="nav_lists">
                 <li><a href="#" id="active">Home</a></li>
                 <li><a href="#">Shop</a></li>
@@ -28,10 +31,17 @@
                 <li><a href="#">Contact</a></li>
             </ul>
 
-            <div class="nav_icons">
-                <a href=""><img src="assets/images/search_logo.png" alt=""></a>
-                <a href=""><img src="assets/images/cart_logo.png" alt=""></a>
+            <div class="icons">
+                <div class="nav_icons">
+                    <a href=""><img src="assets/images/search_logo.png" alt="search"></a>
+                    <a href=""><img src="assets/images/cart_logo.png" alt="cart"></a>
+                </div>
+                <!-- Hamburger button -->
+                <div class="hamburger" onclick="document.querySelector('.nav_lists').classList.toggle('active')">
+                    ☰
+                </div>
             </div>
+
         </nav>
      </div>
      <!-- navbar section end -->
