@@ -162,6 +162,72 @@
   .client p {
     font-size: 14px;
   }
+
+  /* ===============
+    footer section
+  =================== */
+  .footer_area {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .footer_1,
+  .footer_3 {
+    flex: 1 1 300px;
+  }
+
+  .footer_1 {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .footer_lists h3 {
+    font-size: 20px;
+  }
+
+  .footer_lists ul li a {
+    font-size: 16px;
+  }
+
+  .footer_2 {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+
+  .footer_2 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer_2 a.logo_text {
+    font-size: 40px;
+  }
+
+  .footer_2 p {
+    font-size: 16px;
+  }
+
+  .socail_icons a {
+    font-size: 24px;
+  }
+
+  .footer_3 h3 {
+    font-size: 20px;
+  }
+
+  .address,
+  .contract {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .address img,
+  .contract img {
+    width: 12px;
+    height: 14px;
+  }
 }
 
 /* Small devices (mobile ≤ 768px) */
@@ -344,6 +410,62 @@
   .client p {
     font-size: 13px;
   }
+
+   /* ===============
+    footer section
+  =================== */
+
+  .footer_area {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 25px;
+  }
+
+  .footer_1,
+  .footer_2,
+  .footer_3 {
+    flex: 1 1 100%;
+  }
+
+  .footer_lists {
+    margin-bottom: 20px;
+  }
+
+  .footer_lists h3 {
+    font-size: 18px;
+  }
+
+  .footer_lists ul li a {
+    font-size: 15px;
+  }
+
+  .footer_2 img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer_2 a.logo_text {
+    font-size: 32px;
+  }
+
+  .footer_2 p {
+    font-size: 14px;
+  }
+
+  .socail_icons a {
+    font-size: 22px;
+  }
+
+  .footer_3 h3 {
+    font-size: 18px;
+  }
+
+
+  .address img,
+  .contract img {
+    margin: 0;
+  }
 }
 
 /* Extra small devices (≤ 480px) */
@@ -489,5 +611,50 @@
   }
   .client_comment p br{
     display: none;
+  }
+   /* ===============
+    footer section
+  =================== */
+
+  .footer_lists h3 {
+    font-size: 16px;
+  }
+
+  .footer_lists ul li a {
+    font-size: 14px;
+  }
+
+  .footer_2 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer_2 a.logo_text {
+    font-size: 28px;
+  }
+
+  .footer_2 p {
+    font-size: 13px;
+  }
+
+  .socail_icons a {
+    font-size: 20px;
+  }
+
+  .footer_3 h3 {
+    font-size: 16px;
+  }
+
+  .address p,
+  .contract p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+   .footer_2 {
+    order: -1;
+  }
+  .footer_end{
+    font-size: 12px;
   }
 }

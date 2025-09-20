@@ -55,9 +55,7 @@ img {
    background-color: #503217;
    color: #fff;
    margin-top: 40px;
-
  }
-
 
  /* * navbar style start here */
 
@@ -191,7 +189,7 @@ img {
  /* category section start here */
 
  .category_area{
-  
+
    margin-top: 40px;
  }
 
@@ -212,6 +210,7 @@ img {
    opacity: 1;
    gap: 10px;
    border-radius: 102px;
+   transition: transform 0.3s ease;
 
    }
  .cards{
@@ -231,8 +230,13 @@ img {
    padding: 10px;
    border: 2px solid #8F7D6A1A;
    text-align: center;
+   background: #E8E6DE;
+   cursor: pointer;
 
  }
+.card:hover img {
+  transform: scale(1.1); 
+}
  .card h3{
    font-family: Poppins;
    font-weight: 500;
@@ -271,9 +275,14 @@ img {
    padding: 20px;
    margin-bottom: 50px;
    background-color: #F2F2F2;
-
-
+   transition: transform 0.3s ease;
+   cursor: pointer;
+  
  }
+.card2:hover {
+  transform: translateY(-10px);  /* উপরে উঠবে */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
 
  .sanitizer{
    font-size: 16px;
@@ -344,7 +353,16 @@ img {
   object-fit: cover;
   height: 200px;
 
+
  }
+ .img_dev img{
+  transition: transform 0.3s ease;
+  cursor: pointer;
+ }
+ .img_dev:hover img{
+  transform: scale(1.1); 
+ }
+
 
  .badge{
   position: absolute;
@@ -455,6 +473,13 @@ footer{
   display: flex;
   justify-content: space-between;
   
+  
+}
+.footer_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .footer_1{
   display: flex;
@@ -542,4 +567,14 @@ footer{
 .socail_icons a{
   font-size: 28px;
   color: #503217;
+}
+
+.footer_end{
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-align: center;
+  color:  #503217;
+  
 }
